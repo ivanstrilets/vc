@@ -12,12 +12,15 @@ html(lang="ru")
 
     //- header
     header.main-layout__header
-      include ../models/header
+      .main-layout__wrapper
+        include ../models/header
 
     main.main-layout__content
-      //- page content
-      block content
+      .main-layout__wrapper
+        //- page content
+        block content
 
     //- footer
     footer.main-layout__footer
-      include ../models/footer
+      .main-layout__wrapper
+        include ../models/footer
